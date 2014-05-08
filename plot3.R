@@ -34,8 +34,8 @@ plot3 <- function() {
 }
 
 png(file="plot3.png"
-    , width=504
-    , height=504
+    , width=480
+    , height=480
     , bg="transparent")
 plot3()
 dev.off()

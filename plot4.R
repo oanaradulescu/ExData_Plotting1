@@ -52,8 +52,8 @@ plot4 <- function() {
 }
 
 png(file="plot4.png"
-    , width=504
-    , height=504
+    , width=480
+    , height=480
     , bg="transparent")
 plot4()
 dev.off()
