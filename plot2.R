@@ -17,7 +17,7 @@ tidy.power <- function() {
 }
 
 power <- tidy.power()
-power$Date <- as.Date(power$Date, "%d/%m/%Y")
+power$DateTime <- strptime(paste(power$Date, power$Time), "%d/%m/%Y %H:%M:%S")
 
 plot2 <- function() {
     plot(power$DateTime, power$Global_active_power
